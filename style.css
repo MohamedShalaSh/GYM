@@ -1,0 +1,840 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body,.body-dark{
+    background-image: url(image/backkground.jpg);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* ============== UP ================ */
+.up{
+    position: fixed;
+    margin-left: 96%;
+    z-index: 100;
+    margin-top: 94vh;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.up a{
+    color: #fff;
+}
+/* ==================== BAR IN HEAD ========================= */
+header .bar,
+header .bar-btn-show{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+/* bar */
+.THEbar,
+.bar-show{
+    position: absolute;
+    width: 100%;
+    background-color: #393d42;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -11cm;
+    z-index: 5;
+    display: none;
+}
+.bar-show{
+    margin-top: 0;
+}
+.THEbar li{
+    list-style: none;
+    margin: 3px 0;
+    padding: 7px 0;
+}
+.THEbar li:hover{
+    background-color: rgba(255, 255, 255, 0.158);
+}
+.THEbar a{
+    color: #f48915;
+    text-decoration: none;
+}
+.THEbar .join p{
+    width: 3cm;
+    margin: 0 auto;
+    padding: 7px ;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* exit bar button */
+.close1,.close1-show{
+    font-size: 35px;
+    color: #fff;
+    display: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+/* ============HEADER====================================== */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header .left-h{
+    width: calc(100% - 9cm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 2cm;
+    margin-top: 18px;
+}
+header .left-h span{
+    position: absolute;
+    top: 4.5cm;
+    left: 4cm;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 400px 100px #d27716;
+    background-color: #f488155f;
+    z-index: -1;
+}
+header .left-h img{
+    width: 160px;
+    margin-left: 30px;
+}
+header .left-h ul{
+    display: flex;
+    margin-right: 1cm;
+    transition: all 2s;
+}
+header .left-h ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+header .left-h ul a{
+    text-decoration: none;
+    color: #fff;
+}
+header .left-h ul a:hover{
+    color: #d27716;
+}
+/* ==== orange box in head */
+header .right-h{
+    width: 9cm;
+    height: 98.5vh;
+    background-color: #f48915;
+    direction: rtl;
+    position: absolute;
+    margin-left: calc(100% - 9cm);
+    transition: all .5s;
+}
+header .right-h p{
+    margin-top: 45px;
+    margin-right: 1cm;
+}
+header .right-hh p{
+    margin-right: 1cm;
+    display: none;
+}
+header .right-h p a,
+header .right-hh p {
+    padding: 7px ;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* =================================== */
+/* ==================MAIN PAGE ======================= */
+main{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+/* left */
+main .left-m{
+    margin-left: .9cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .left-m .logo{
+    width: 9cm;
+    height: 1.6cm;
+    background-color: #393d42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 2.5cm;
+    transition: all 1s;
+}
+main .left-m .logo span{
+    position: relative;
+    margin-left: -6cm;
+    width: 2.3cm;
+    height: 1.2cm;
+    background-color: #f48915;
+    border-radius: 30px;
+    animation: spaan 5s linear infinite;
+}
+@keyframes spaan{
+    0%,100%{
+        margin-left: ;
+    }
+    50%{
+        margin-left: 7cm;
+    }
+}
+main .left-m .logo p{
+    position: absolute;
+    color: #fff;
+}
+
+main .left-m h3{
+    margin: 20px 0;
+    font-size: 70px;
+    line-height: 1.5;
+    transition: all 1s;
+}
+main .left-m h3 span{
+    color: #f48915;
+}
+/* social media icons style */
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons ul{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+}
+.icons ul li{
+    list-style: none;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);
+    background-color: #ccc;
+    transition: all 1s;
+}
+.icons ul li span{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+.icons ul li:hover span:nth-child(5){
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.icons ul li:hover span:nth-child(4){
+    transform: translate(30px,-30px);
+    opacity: .8;
+}
+.icons ul li:hover span:nth-child(3){
+    transform: translate(20px,-20px);
+    opacity: .6;
+}
+.icons ul li:hover span:nth-child(2){
+    transform: translate(10px,-10px);
+    opacity: .4;
+}
+.icons ul li:hover span:nth-child(1){
+    transform: translate(0,-0);
+    opacity: .2;
+}
+.icons ul li:nth-child(1) span{
+    background-color: #3b5999;
+}
+.icons ul li:nth-child(2) span{
+    background-color: #55acee;
+}
+.icons ul li:nth-child(3) span{
+    background-color: #dd4b39;
+}
+.icons ul li:nth-child(4) span{
+    background-color: #0077b5;
+}
+.icons ul li:nth-child(5) span{
+    background-color: #e44057;
+}
+/* --- */
+main .left-m .btns {
+    display: flex;
+}
+main .left-m .btns p{
+    width: 3cm;
+    padding: 9px;
+    font-family: sans-serif;
+    margin-top: 1.2cm;
+    margin-right: 10px;
+    border: 2px solid #f48915;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+main .left-m .btns p:hover{
+    background-color: #f48915;
+}
+main .left-m .btns #btn1{
+    background-color: #f48915;
+}
+    /* right */
+main .right-m img{
+    position: relative;
+    width: 450px;
+    z-index: 1;
+    margin-right: 2.3cm;
+    margin-top: 1cm;
+    border: 15px solid #f48915;
+    border-bottom: none;
+    border-radius: 50%;
+    padding: 1cm;
+    transition: all 1s;
+    animation: imgLogo linear 2s infinite,imgLogo2 linear 1s 1;
+    box-shadow: 0 0 5px #f48915;
+}
+@keyframes imgLogo2{
+        0%{
+            margin-right: 0;
+        }
+        50%{
+            margin-right: 1cm;
+        }
+}
+@keyframes imgLogo{
+    0%,100%{
+
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+}
+/* ============================================================================ */
+/* ======================PROGRAMS =========================================== */
+.programs{
+    color: #fff;
+    padding: 0 .6cm;
+}
+.title{
+    text-align: center;
+    margin-top: 1.5cm;
+}
+.title h3{
+    font-size: 50px ;
+    transition: all 1s;
+    margin-bottom: 1cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.programs .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.programs .boxes section{
+    width: 9cm;
+    background-color: #9c9c9c;
+    padding: .5cm;
+    line-height: 2;
+    margin: 0cm 10px;
+    margin-bottom: 1cm;
+    transition: all 2s;
+    transform: skew(3deg);
+}
+.programs .boxes section:hover{
+    background:  linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    cursor: pointer;
+}
+.programs section h3{
+    padding: 10px 0;
+    font-size: 19px;
+}
+.programs section .p1{
+    color: #222;
+}
+/* ============================================================================= */
+/* ============ WHY US ==================================================== */
+.why{
+    margin-top: 1cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1cm;
+    color: #fff;
+    padding: 30px;
+}
+.why .imgs img{
+    width: 400px;
+    margin: 5px;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+}
+@keyframes why{
+    0%{
+        margin-right: 4cm;
+    }
+    50%{
+        margin-right: 20px;
+    }
+}
+.why .para{
+    margin-left: 0cm;
+}
+@keyframes why2{
+    0%{
+        margin-left: 4cm;
+    }
+    50%{
+        margin-left: 20px;
+    }
+}
+.why .para h3{
+    color: #f48915;
+    margin-bottom: 20px;
+}
+.why .para h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.why .para h1 span{
+    color: #f48915;
+}
+.why .why-items section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.why .why-items section img{
+    width: 30px;
+    margin-right: 20px;
+}
+.why .para .p1{
+    color: rgb(161, 161, 161);
+    margin-bottom: 10px;
+}
+.why .why-logo img{
+    width: 30px;
+    margin: 4px 3px;
+}
+/* ============================================================================= */
+/* ==============PLAN ============================================== */
+.plan{
+    color: #fff;
+    padding: 0 .6cm;
+    margin-bottom: 5cm;
+}
+.plan .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.plan .boxes section{
+    background-color: #393d42;
+    width: 7.7cm;
+    padding: 1cm;
+    color: #fff;
+    margin:1cm 25px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 1s;
+}
+.plan .boxes section .img1{
+    width: 20px;
+    margin-bottom: 1cm;
+}
+.plan .boxes section h1{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.plan section div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.plan section div img{
+    width: 20px;
+    margin-right: 10px;
+}
+.plan .p1{
+    font-size: 15px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.plan .p1:hover{
+    color: #d27716;
+}
+.plan button{
+    width: 90%;
+    padding: 9px 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.plan button:hover{
+    background-color: #f48915;
+    color: #fff;
+}
+.plan .s2{
+    background:  linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%) !important;
+    transform: scale(115%);
+}
+.plan .s2 button:hover{
+    background-color: #fff;
+    color: #000;
+}
+@keyframes plan{
+    0%{
+        margin: 0 4cm;
+    }
+    50%{
+        margin: 25px;
+    }
+}
+.plan span{
+    position: absolute;
+    margin-top: 18cm;
+    margin-left: 70%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 600px 100px #d27716;
+    background-color: #f488155f;
+    z-index: -1;
+}
+/* ============================================================================= */
+/* ==============CONTACT ============================================== */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2cm;
+    padding: 30px;
+    color: #fff;
+}
+.contact h1 span{
+    color: #f48915;
+}
+.contact form{
+    padding: 15px;
+    background-color: #9c9c9c;
+    margin-left: 4cm;
+    border-radius: 20px 0;
+}
+.contact form input{
+    background-color: #9c9c9c;
+    width: 7cm;
+    border: none;
+    outline: none;
+    padding: 5px 3px;
+}
+.contact form button{
+    background-color: #f48915;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 20px 0;
+}
+.contact form button:hover{
+    background-color: #d27716;
+}
+.hr{
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid #f48915;
+    background-color: #f48915;
+}
+/* ============================================================================= */
+/* ============== FOOTER ============================================== */
+footer{
+    text-align: center;
+}
+footer .icons{
+    margin: 2cm auto;
+    justify-content: center;
+}
+footer .icons ul li{
+}
+@keyframes icoons{
+    0%{
+        margin: 3cm 3cm;
+    }
+    50%{
+        margin: 0 30px;
+    }
+}
+footer img{
+    width: 170px;
+    margin: .7cm 0 2cm 0;
+}
+footer .s1,
+footer .s2{
+    position: absolute;
+    margin-top: 7cm;
+    margin-left: 80%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 300px 50px #d27716;
+    background-color: #f4881523;
+    z-index: -1;
+    transition: all 1s;
+}
+footer .s2{
+    box-shadow: 0px 0px 300px 50px #d21616;
+    background-color: #d2161632;
+    margin-top: 3cm;
+    margin-left: 5cm;
+}
+/* ============================================================================= */
+/* ==============MEDIA RESPONSIVE ============================================== */
+@media(max-width:1090px){
+    header .right-h{
+        display: none;
+    }
+    header .left-h{
+        width: 100%;
+    }
+    main .right-m img{
+        width: 300px;
+        margin-right: 1cm;
+    }
+    header .right-hh p{
+        display: block;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact form{
+        margin-left: 0;
+        margin-top: 1.5cm;
+    }
+}
+@media(max-width:900px){
+    main{
+        flex-direction: column;
+        text-align: center;
+        padding: 0 30px;
+    }
+    main .left-m{
+        margin: 0;
+    }
+    main .left-m .logo{
+        margin: 0 auto;
+        margin-top: 1.5cm;
+    }
+    .icons{
+        justify-content: center;
+    }
+    main .left-m .btns{
+        justify-content: center;
+    }
+    main .right-m img{
+        margin: 1cm 0;
+    }
+}
+@media(max-width:860px){
+    header .left-h ul{
+       display: none;
+    }
+    header .bar{
+        display: block;
+    }
+    header .bar-btn-show{
+        display: block;
+    }
+    main .left-m h3{
+        font-size: 50px;
+    }
+    header .right-hh{
+        display: none;
+    }
+    .THEbar,
+    .bar-show{
+        display: block;
+    }
+    .close1-show{
+        display: block;
+    }
+    .up{
+        margin-left: 92%;
+    }
+}
+@media(max-width:767px){
+    .programs .boxes section{
+        width: 90%;
+    }
+    .why .imgs img{
+        margin-right: 0;
+    }
+    footer .s2{
+        margin-top: -12cm;
+    }
+}
+@media(max-width:580px){
+    .icons ul li{
+        width: 35px;
+        height: 35px;
+        margin: 0 20px;
+        transform: rotate(-30deg) skew(20deg);
+    }
+}
+@media(max-width:440px){
+    main .left-m h3{
+        font-size: 30px;
+    }
+    main .left-m .logo{
+        width: 7cm;
+        height: 1.3cm;
+        font-size: 12px;
+    }
+    main .left-m .logo span{
+        position: relative;
+        margin-left: -4.5cm;
+        width: 2cm;
+        height: 1cm;
+    }
+    @keyframes spaan{
+        50%{
+            margin-left: 5cm;
+        }
+    }
+    .why .imgs img{
+        width: 300px;
+    }
+    .why .para h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:400px){
+    .icons ul li{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin: 0 15px;
+        transform: rotate(-30deg) skew(20deg);
+    }
+    main .right-m img{
+        width: 270px;
+    }
+    .title h3{
+        font-size: 40px;
+    }
+    .contact h1{
+        font-size: 25px;
+    }
+    .contact form{
+        padding: 15px  10px;
+    }
+    .contact form input{
+        width: 4cm;
+    }
+}
+
+
+/* ======================جميع الصفحات الاضافيه ============z index >20====== */
+/* ==================JOIN PAGE ========================= */
+.joinIN,
+.joinIN-show{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #393d42f9;
+    z-index: 20;
+    text-align: center;
+    overflow: scroll;
+    padding: 2cm 30px;
+    display: none;
+}
+.joinIN-show{
+    display: block;
+}
+.joinIN img{
+    width: 160px;
+    margin-bottom: 30px;
+}
+.joinIN form{
+    width: 8cm;
+    padding: .7cm 0;
+    margin: 0 auto;
+    background-color: #393d42;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.317);
+}
+.joinIN form h3{
+    padding: 20px 0;
+    color: #f48915;
+}
+.joinIN form input,
+.joinIN form button{
+    width: 85%;
+    border: none;
+    padding: 7px 10px;
+    margin-bottom: 3px;
+    outline: none;
+    border-radius: 0 0 0 20px;
+    color: #f48915;
+    background-color: #393d42;
+    border-bottom:1px solid #f48915 ;
+}
+.joinIN form button{
+    background-color: #f48915;
+    color: #fff;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.joinIN form button:hover{
+    background-color: #d27716;
+}
+.joinIN form .or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.joinIN form .or .oor{
+    margin: 0 3px;
+}
+.joinIN form .sign{
+    margin-top: 25px ;
+    color: #f48915;
+    cursor: pointer;
+}
+.joinIN .close2{
+    position: absolute;
+    margin-left: 6.9cm;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 2s;
+}
+.joinIN .close2:hover{
+    transform: rotate(360deg);
+}

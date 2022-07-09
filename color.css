@@ -1,0 +1,257 @@
+/* =========SETTING================== */
+.setting{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 150;
+    margin-top: 2.7cm;
+}
+.setting .box{
+    width: 5.5cm;
+    height: 4cm;
+    background: #393d42;
+    border: 1px solid #f48915;
+    border-left: none;
+    padding: 15px;
+    color: #fff;
+    border-radius:0 3px 3px 0;
+    transition: all .3s ease-in-out;
+    margin-left: -5.5cm;
+}
+.setting .box div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.setting .box-show{
+    margin-left: 0;
+}
+.setting .box .slideBtn,
+.setting .box .slideBtn-show{
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 18px;
+    border-radius: 20px;
+    background-color: #222;
+    padding: 0 3px;
+    cursor: pointer;
+}
+.setting .box .slideBtn-show{
+    background-color: pink;
+}
+.setting .box .slideBtn .span,
+.setting .box .slideBtn .span-show{
+    width: 10px;
+    height: 10px;
+    background-color: #444;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.setting .box .slideBtn .span-show{
+    margin-left: 17px;
+    background-color: #fff;
+}
+.setting .boxBtn{
+    position: relative;
+    margin-left: -1px;
+    margin-top: -1.5cm;
+    width: .5cm;
+    border: 1px solid #f48915;
+    border-left: none;
+    height: .9cm;
+    color: #fff;
+    background-color: #393d42;
+    border-radius: 0 5px 20px 0;
+    cursor: pointer;
+}
+.setting .boxBtn .rowsetting
+,.rowsetting-show{
+    margin: 5px 3px;
+}
+.rowsetting-show{
+    transform: rotate(180deg);
+}
+/* --------------------------------------------------------------------------- */
+.setting .box .slideBtn2,
+.setting .box .slideBtn2-show{
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 18px;
+    border-radius: 20px;
+    background-color: #222;
+    padding: 0 3px;
+    cursor: pointer;
+}
+.setting .box .slideBtn2-show{
+    background-color: pink;
+}
+.setting .box .slideBtn2 .span2,
+.setting .box .slideBtn2 .span2-show{
+    width: 10px;
+    height: 10px;
+    background-color: #444;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.setting .box .slideBtn2 .span2-show{
+    margin-left: 17px;
+    background-color: #fff;
+}
+.body-dark{
+    background-image: none;
+    background-color: #161b21;
+}
+/* --------------------------------------------------------------------------- */
+.setting .box .slideBtn3,
+.setting .box .slideBtn3-show{
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 18px;
+    border-radius: 20px;
+    background-color: #222;
+    padding: 0 3px;
+    cursor: pointer;
+}
+.setting .box .slideBtn3-show{
+    background-color: pink;
+}
+.setting .box .slideBtn3 .span3,
+.setting .box .slideBtn3 .span2-show{
+    width: 10px;
+    height: 10px;
+    background-color: #444;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.setting .box .slideBtn3 .span3-show{
+    margin-left: 17px;
+    background-color: #fff;
+}
+.name,
+.name-show{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: #393d427d;
+    z-index: 120;
+    margin-top: -3cm;
+    transition: all 1s ;
+}
+.name-show{
+    margin-top: 3cm;
+}
+.name h3 span{
+    color: #f48915;
+}
+/* --------------------------------------------------------------------------- */
+
+.pink-color .THEbar a{
+    color: #ba25a7;
+}
+.pink-color header .left-h span{
+    box-shadow: 0px 0px 400px 100px #ba25a7;
+    background-color: #ba25a6a7;
+}
+.pink-color header .left-h ul a:hover{
+    color: #ba25a7;
+}
+.pink-color header .right-h{
+    background-color: #ba25a7;
+}
+.pink-color main .left-m .logo span{
+    background-color: #ba25a7;
+}
+.pink-color main .left-m h3 span{
+    color: #ba25a7;
+}
+.pink-color main .left-m .btns p{
+    border: 2px solid #ba25a7;
+}
+.pink-color main .left-m .btns p:hover{
+    background-color: #ba25a7;
+}
+.pink-color main .left-m .btns #btn1{
+    background-color: #ba25a7;
+}
+.pink-color main .right-m img{
+    border: 15px solid #ba25a7;
+    border-bottom: none;
+    box-shadow: 0 0 5px #ba25a7;
+}
+.pink-color .programs .boxes section:hover{
+    background:  linear-gradient(210.41deg, #fa5042 1.14%, #ba25a7 100.75%);
+}
+.pink-color .why .para h3{
+    color: #ba25a7;
+    margin-bottom: 20px;
+}
+.pink-color .why .para h1 span{
+    color: #ba25a7;
+}
+.pink-color .plan .p1:hover{
+    color: #ba25a7;
+}
+.pink-color .plan button:hover{
+    background-color: #ba25a7;
+}
+.pink-color .plan .s2{
+    background:  linear-gradient(210.41deg, #fa5042 1.14%, #ba25a7 100.75%) !important;
+}
+.pink-color .joinIN form h3{
+    color: #ba25a7;
+}
+.pink-color .joinIN form input,
+.pink-color .joinIN form button{
+    color: #ba25a7;
+    border-bottom:1px solid #ba25a7 ;
+}
+.pink-color .joinIN form button{
+    background-color: #ba25a7;
+    color: #fff;
+}
+.pink-color .joinIN form button:hover{
+    background-color: #a41c92;
+}
+.pink-color .joinIN form .sign{
+    color: #ba25a7;
+}
+.pink-color .setting .box{
+    border: 1px solid #ba25a7;
+    border-left: none;
+}
+.pink-color .setting .boxBtn{
+    border: 1px solid #ba25a7;
+    border-left: none;
+}
+.pink-color .plan span{
+    box-shadow: 0px 0px 400px 100px #ba25a7;
+    background-color: #ba25a676;
+}
+.pink-color .contact h1 span{
+    color: #ba25a7;
+}
+.pink-color .contact form button{
+    background-color: #ba25a7;
+}
+.pink-color .contact form button:hover{
+    background-color: #a41c92;
+}
+.pink-color footer .s1{
+    box-shadow: 0px 0px 400px 100px #ba25a7;
+    background-color: #ba25a676;
+}
+.pink-color .hr{
+    border: 2px solid #ba25a7;
+    background-color: #ba25a7;
+}
+.pink-color .name h3 span{
+    color: #ba25a7;
+}
